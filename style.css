@@ -46,25 +46,51 @@ nav a:hover {
     background: #e3ecfa;
     padding: 60px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
 }
 
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    padding: 40px 30px 30px 30px;
+}
+
+.school-building {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin: 6px 0;
+    font-size: 1.08rem;
+    color: #333;
 }
 
-.hero .school-building {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+.hero p strong {
+    color: #003366;
+    letter-spacing: 0.5px;
+}
+
+.hero h2 {
+    font-size: 1.7rem;
+    margin: 18px 0 8px 0;
+    color: #003366;
+}
+
+.hero .btn {
+    margin-top: 18px;
 }
 
 .btn {
@@ -89,4 +115,14 @@ footer {
     padding: 15px 0;
     margin-top: 40px;
     font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .hero .container {
+        padding: 20px 8px 18px 8px;
+        max-width: 98vw;
+    }
+    .school-building {
+        max-width: 98vw;
+    }
 }
